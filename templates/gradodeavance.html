@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <body background="/static/foto/pp.jpg" >
+<link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='css/gradodeavance.css')}}">
+<br>
+    <center><h1><strong>𝔾𝕣𝕒𝕕𝕠 𝕕𝕖 𝔸𝕧𝕟𝕒𝕔𝕖</strong></h1></center>
+<center><table width="80%" border="0" cellpadding="2%"></table></center>
+
+        <tr>
+            <td>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table-dark" scope="col">【﻿Ｄｅｓｃｒｉｐｃｉｏｎ】</th>
+                            <td class="table-dark"></td>
+                            <td class="table-dark"><center><a class="btn btn-info" href="/gradodeavance_agregar" role="button">𝒜𝑔𝓇𝑒𝑔𝒶 𝓊𝓃 𝒢𝓇𝒶𝒹𝑜 𝒹𝑒 𝒜𝓋𝓃𝒶𝒸𝑒</a></center></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <table class="table table-striped table-info">
+                        {% for i in gradodeavance %}
+                            <tr>
+                                <td width="60%">{{i.1}}</td>
+                                <td width="20%"><center><a class="btn btn-info" href="/gradodeavance_editar/{{i.0}}" role="button">𝐸𝒹𝒾𝓉𝒶𝓇</a></center></td>
+                                <td width="20%"><center><a class="btn btn-outline-info" href="/gradodeavance_borrar/{{i.0}}" role="button">𝐵𝑜𝓇𝓇𝒶𝓇</a></center></td>
+
+
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    </tbody>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</div>
+{% endblock %}

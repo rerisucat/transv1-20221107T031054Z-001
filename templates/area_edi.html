@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>
+    <br>
+    <Center> <b> 𝔼𝕕𝕚𝕥𝕒𝕣 𝔸𝕣𝕖𝕒 </b> </Center>
+
+</h3>
+   <br>
+   <br>
+    <form action="/area_fedita/{{area.0}}" method="post">
+        <div class="container">
+          <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="descripcion" class="form-label"><strong>𝓘𝓷𝓰𝓻𝓮𝓼𝓮 𝓮𝓵 𝓐𝓻𝓮𝓪</strong></label>
+                      <input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="area" value="{{area.1}}">
+                </div>
+
+                </div>
+              <button type="submit" class="btn btn-info">𝒜𝒸𝓉𝓊𝒶𝓁𝒾𝓏𝒶𝓇</button>
+          </div>
+    </div>
+
+</form>
+
+{% endblock %}

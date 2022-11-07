@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>
+    <br>
+    <Center> <b> 𝓔𝓭𝓲𝓽𝓪𝓻 𝓒𝓪𝓻𝓻𝓮𝓻𝓪</b> </Center>
+
+</h3>
+   <br>
+   <br>
+    <form action="/carrera_fedita/{{carrera.0}}" method="post">
+        <div class="container">
+          <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="descripcion" class="form-label"><strong>𝕀𝕟𝕘𝕣𝕖𝕤𝕖 𝕝𝕒 ℂ𝕒𝕣𝕣𝕖𝕣𝕒</strong></label>
+                      <input type="text" class="form-control" name="descripcion" id="descripcion" placeholder="carrera" value="{{carrera.1}}">
+                </div>
+
+                </div>
+              <button type="submit" class="btn btn-info">𝒜𝒸𝓉𝓊𝒶𝓁𝒾𝓏𝒶𝓇</button>
+          </div>
+    </div>
+
+</form>

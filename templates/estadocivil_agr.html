@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>
+    <br>
+    <Center> <b> 𝒜𝑔𝓇𝑒𝑔𝒶𝓇 𝐸𝓈𝓉𝒶𝒹𝑜 𝒸𝒾𝓋𝒾𝓁 </b> </Center>
+<link rel="stylesheet" type="text/css" href="{{url_for('static' , filename='css/estadocivil.css')}}">
+</h3>
+   <br>
+   <br>
+<form action="/estadocivil_fagrega" method="post">
+   <div class="container">
+          <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="descripcion" class="form-label"><strong> 𝐼𝓃𝑔𝓇𝑒𝓈𝑒 𝑒𝓁 𝐸𝓈𝓉𝒶𝒹𝑜 𝒸𝒾𝓋𝒾𝓁</strong></label>
+                      <input type="text" class="form-control" name="descripcion" id="descripcion"required></input>
+                </div>
+                </div>
+          </div>
+       <button type="submit" class="btn btn-info">𝐸𝓃𝓋𝒾𝒶𝓇</button>
+    </div>
+
+</form>
+{% endblock %}
